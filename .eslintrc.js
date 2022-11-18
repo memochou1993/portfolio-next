@@ -7,7 +7,6 @@ module.exports = {
   extends: [
     'next/core-web-vitals',
     'airbnb',
-    'airbnb-typescript',
   ],
   overrides: [
   ],
@@ -17,5 +16,6 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'react/jsx-props-no-spreading': [1, { exceptions: ['Component'] }],
+    'import/extensions': [1, 'ignorePackages', { ts: 'never', tsx: 'never' }],
   },
 };

@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Card() {
   return (
     <div className="p-8 rounded-lg shadow-lg dark:bg-slate-300">

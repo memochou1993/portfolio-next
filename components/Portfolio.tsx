@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Card from '@/components/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Portfolio() {
   return (
@@ -18,6 +20,11 @@ export default function Portfolio() {
               {' · '}
               Taipei, Taiwan
             </span>
+          </div>
+          <div className="flex justify-center mb-8">
+            <FontAwesomeIcon icon={faGithub} width="24" color="white" className="mx-2" />
+            <FontAwesomeIcon icon={faFacebook} width="24" color="white" className="mx-2" />
+            <FontAwesomeIcon icon={faLinkedin} width="24" color="white" className="mx-2" />
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8">
             <Card />
