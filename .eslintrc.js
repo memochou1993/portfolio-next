@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'next/core-web-vitals',
     'airbnb',
+    'airbnb-typescript',
   ],
   overrides: [
   ],
