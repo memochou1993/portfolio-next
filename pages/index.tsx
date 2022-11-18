@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Portfolio from '../components/Portfolio';
+import Portfolio from '@/components/Portfolio';
 
 export default function Home() {
   return (
