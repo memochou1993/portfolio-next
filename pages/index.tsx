@@ -22,7 +22,9 @@ export default function Home() {
           <Portfolio />
         </div>
       </main>
-      <footer className="py-16 dark:bg-slate-900" />
+      <footer className="pb-16 text-sm font-thin text-center dark:text-slate-300 dark:bg-slate-900">
+        {`© ${new Date().getFullYear()} Memo Chou`}
+      </footer>
     </div>
   );
 }
