@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-800">
-        <main className="container px-16 py-8 mx-auto sm:py-12 sm:px-24 md:py-16 md:px-32">
+        <main className="container px-16 py-16 mx-auto sm:px-24 md:px-32">
           <Profile />
           <hr className="h-px my-8 border-0 dark:bg-gray-600" />
           <Heading text="Portfolio" />
