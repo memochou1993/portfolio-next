@@ -13,6 +13,7 @@ import {
   Profile,
   About,
   Portfolio,
+  Footer,
 } from '@/components';
 
 export default function Home() {
@@ -53,9 +54,7 @@ export default function Home() {
             <Heading text="Projects" />
             <Portfolio />
           </main>
-          <footer className="text-sm font-thin text-center dark:text-slate-300">
-            {`© ${new Date().getFullYear()} Memo Chou`}
-          </footer>
+          <Footer />
         </div>
       </div>
     </div>
