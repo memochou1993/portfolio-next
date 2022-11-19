@@ -1,10 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 import {
-  Profile,
-  Portfolio,
+  Divider,
   Heading,
+  Profile,
   About,
+  Portfolio,
 } from '@/components';
 
 export default function Home() {
@@ -18,10 +19,10 @@ export default function Home() {
       <div className="dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-800">
         <main className="container px-16 py-20 mx-auto sm:px-24 md:px-32">
           <Profile />
-          <hr className="h-px my-8 border-0 dark:bg-slate-500 sm:my-10 md:my-12" />
+          <Divider />
           <Heading text="About" />
           <About />
-          <hr className="h-px my-8 border-0 dark:bg-slate-500 sm:my-10 md:my-12" />
+          <Divider />
           <Heading text="Portfolio" />
           <Portfolio />
         </main>
