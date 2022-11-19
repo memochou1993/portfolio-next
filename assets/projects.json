@@ -1,7 +1,7 @@
 [
   {
     "title": "Particle Staking",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/37.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/37.jpg",
     "link": "https://portfolio.epoch.tw/works/37",
     "tags": [
       "Solidity",
@@ -11,7 +11,7 @@
   },
   {
     "title": "Paint App",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/36.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/36.jpg",
     "link": "https://portfolio.epoch.tw/works/36",
     "tags": [
       "TypeScript",
@@ -20,7 +20,7 @@
   },
   {
     "title": "Password Manager 2.0",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/35.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/35.jpg",
     "link": "https://portfolio.epoch.tw/works/35",
     "tags": [
       "Go",
@@ -30,7 +30,7 @@
   },
   {
     "title": "Crypto Donation",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/34.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/34.jpg",
     "link": "https://portfolio.epoch.tw/works/34",
     "tags": [
       "Go",
@@ -40,7 +40,7 @@
   },
   {
     "title": "Thesaurus Builder",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/32.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/32.jpg",
     "link": "https://portfolio.epoch.tw/works/32",
     "tags": [
       "Go",
@@ -49,7 +49,7 @@
   },
   {
     "title": "Localiser",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/30.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/30.jpg",
     "link": "https://portfolio.epoch.tw/works/30",
     "tags": [
       "Laravel",
@@ -60,7 +60,7 @@
   },
   {
     "title": "URL Shortener 2.0",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/28.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/28.jpg",
     "link": "https://portfolio.epoch.tw/works/28",
     "tags": [
       "Go",
@@ -70,7 +70,7 @@
   },
   {
     "title": "Time Clock",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/31.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/31.jpg",
     "link": "https://portfolio.epoch.tw/works/31",
     "tags": [
       "Go",
@@ -79,20 +79,184 @@
   },
   {
     "title": "Password Generator",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/29.jpg",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/29.jpg",
     "link": "https://portfolio.epoch.tw/works/29",
     "tags": [
       "Vue"
     ]
   },
   {
-    "title": "GH Ranking",
-    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/27.jpg",
+    "title": "GH Rankings",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/27.jpg",
     "link": "https://portfolio.epoch.tw/works/27",
     "tags": [
       "Go",
       "Vue",
       "MongoDB"
+    ]
+  },
+  {
+    "title": "Worker Service",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/33.jpg",
+    "link": "https://portfolio.epoch.tw/works/33",
+    "tags": [
+      "Go",
+      "Vue",
+      "gRPC"
+    ]
+  },
+  {
+    "title": "Lexicon",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/26.jpg",
+    "link": "https://portfolio.epoch.tw/works/26",
+    "tags": [
+      "Laravel",
+      "Vue"
+    ]
+  },
+  {
+    "title": "Profit & Loss Calculator",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/25.jpg",
+    "link": "https://portfolio.epoch.tw/works/25",
+    "tags": [
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "Image Crawler",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/24.jpg",
+    "link": "https://portfolio.epoch.tw/works/24",
+    "tags": [
+      "Go",
+      "Vue"
+    ]
+  },
+  {
+    "title": "Chat App",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/23.jpg",
+    "link": "https://portfolio.epoch.tw/works/23",
+    "tags": [
+      "Go",
+      "React"
+    ]
+  },
+  {
+    "title": "AAT Thesaurus",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/22.jpg",
+    "link": "https://portfolio.epoch.tw/works/22",
+    "tags": [
+      "Go",
+      "Vue",
+      "MongoDB"
+    ]
+  },
+  {
+    "title": "JSON Editor",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/21.jpg",
+    "link": "https://portfolio.epoch.tw/works/21",
+    "tags": [
+      "Laravel",
+      "Vue",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Password Manager",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/19.jpg",
+    "link": "https://portfolio.epoch.tw/works/19",
+    "tags": [
+      "Laravel",
+      "Vue",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "104 Calculator",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/20.jpg",
+    "link": "https://portfolio.epoch.tw/works/20",
+    "tags": [
+      "Vue"
+    ]
+  },
+  {
+    "title": "Portfolio",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/18.jpg",
+    "link": "https://portfolio.epoch.tw/works/18",
+    "tags": [
+      "Laravel",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "URL Shortener",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/16.jpg",
+    "link": "https://portfolio.epoch.tw/works/16",
+    "tags": [
+      "Laravel",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "KUNTAI",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/10.jpg",
+    "link": "https://portfolio.epoch.tw/works/10",
+    "tags": [
+      "Laravel",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Homework Manager",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/8.jpg",
+    "link": "https://portfolio.epoch.tw/works/8",
+    "tags": [
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Lunch Order System",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/7.jpg",
+    "link": "https://portfolio.epoch.tw/works/7",
+    "tags": [
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Archive",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/2.jpg",
+    "link": "https://portfolio.epoch.tw/works/2",
+    "tags": [
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Course Reviews",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/6.jpg",
+    "link": "https://portfolio.epoch.tw/works/6",
+    "tags": [
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Video Order System",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/3.jpg",
+    "link": "https://portfolio.epoch.tw/works/3",
+    "tags": [
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Railway Stations",
+    "image": "https://portfolio.epoch.tw/images/screenshots/original/1.jpg",
+    "link": "https://portfolio.epoch.tw/works/1",
+    "tags": [
+      "PHP",
+      "MySQL"
     ]
   }
 ]

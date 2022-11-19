@@ -25,7 +25,7 @@ export default function Card({
       <div className="px-4 py-6">
         <div className="mb-4">
           <a href={link} target="_blank" rel="noreferrer">
-            <span className="text-2xl font-bold tracking-tighter  sm:tracking-tight md:tracking-normal dark:text-slate-200 hover:underline hover:decoration-1 hover:underline-offset-4">
+            <span className="text-2xl font-bold tracking-tighter sm:tracking-tight md:tracking-normal dark:text-slate-200 hover:underline hover:decoration-1 hover:underline-offset-4">
               {title}
             </span>
           </a>
