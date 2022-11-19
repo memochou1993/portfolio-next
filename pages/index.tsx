@@ -16,16 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-800">
-        <main className="container px-16 py-16 mx-auto sm:px-24 md:px-32">
+        <main className="container px-16 py-20 mx-auto sm:px-24 md:px-32">
           <Profile />
-          <hr className="h-px my-16 border-0 dark:bg-slate-500" />
+          <hr className="h-px my-8 border-0 dark:bg-slate-500 sm:my-10 md:my-12" />
           <Heading text="About" />
           <About />
-          <hr className="h-px my-16 border-0 dark:bg-slate-500" />
+          <hr className="h-px my-8 border-0 dark:bg-slate-500 sm:my-10 md:my-12" />
           <Heading text="Portfolio" />
           <Portfolio />
         </main>
-        <footer className="pb-16 text-sm font-thin text-center dark:text-slate-300">
+        <footer className="pb-20 text-sm font-thin text-center dark:text-slate-300">
           {`© ${new Date().getFullYear()} Memo Chou`}
         </footer>
       </div>
