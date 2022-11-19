@@ -16,21 +16,21 @@ export default function Card({
   tags,
 }: Props) {
   return (
-    <div className="max-w-sm bg-white border rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 dark:border-slate-400">
+    <div className="max-w-sm border rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
       <picture>
         <source srcSet={image} type="image/webp" />
         <img alt={title} src={image} className="rounded-t-xl aspect-auto aspect-[3/2] max-h-[200px]" />
       </picture>
-      <hr className="h-px border-0 dark:bg-slate-500" />
+      <hr className="h-px border-0 bg-slate-500" />
       <div className="px-4 py-6">
         <div className="mb-4">
           <a href={link} target="_blank" rel="noreferrer">
-            <span className="text-2xl font-bold tracking-tighter sm:tracking-tight md:tracking-normal dark:text-slate-200 hover:underline hover:decoration-1 hover:underline-offset-4">
+            <span className="text-2xl font-bold tracking-tighter text-slate-800 sm:tracking-tight md:tracking-normal dark:text-slate-200 hover:underline hover:decoration-1 hover:underline-offset-4">
               {title}
             </span>
           </a>
         </div>
-        <p className="mb-4 font-thin dark:text-slate-300">
+        <p className="mb-4 font-thin text-slate-700 dark:text-slate-300">
           {
             tags.map((tag, i) => (
               <span key={tag}>

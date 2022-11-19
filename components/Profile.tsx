@@ -49,7 +49,7 @@ export default function Profile() {
         <Image alt="Memo Chou" src="/avatar.jpeg" height="460" width="460" className="w-32 h-32 rounded-full sm:w-36 sm:h-36 md:w-40 md:h-40" />
       </div>
       <div className="flex justify-center">
-        <div className="flex flex-col dark:text-slate-200">
+        <div className="flex flex-col text-slate-800 dark:text-slate-200">
           <div className="text-4xl font-bold tracking-wider">
             Memo Chou
           </div>
@@ -69,11 +69,11 @@ export default function Profile() {
               Taipei, Taiwan
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex items-center justify-between">
             {
               links.map(({ icon, link }) => (
-                <a href={link} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={icon} className="w-6 dark:text-slate-300 dark:hover:text-white" />
+                <a key={link} href={link} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={icon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
                 </a>
               ))
             }
