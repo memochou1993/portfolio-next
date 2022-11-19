@@ -3,6 +3,7 @@ import Head from 'next/head';
 import {
   Profile,
   Portfolio,
+  Heading,
 } from '@/components';
 
 export default function Home() {
@@ -17,9 +18,7 @@ export default function Home() {
         <div className="container px-16 py-8 mx-auto sm:py-12 sm:px-24 md:py-16 md:px-32">
           <Profile />
           <hr className="h-px my-8 border-0 dark:bg-gray-600" />
-          <div className="my-8 text-xl font-bold tracking-wider text-center dark:text-slate-300 sm:text-2xl md:text-4xl sm:my-12 md:my-16">
-            Portfolio
-          </div>
+          <Heading text="Portfolio" />
           <Portfolio />
         </div>
       </main>
