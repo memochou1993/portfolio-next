@@ -16,7 +16,7 @@ export default function Card({
   tags,
 }: Props) {
   return (
-    <div className="max-w-sm bg-white border rounded-xl bg-gradient-to-tl from-slate-900 to-slate-700 dark:border-slate-400">
+    <div className="max-w-sm bg-white border rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 dark:border-slate-400">
       <picture>
         <source srcSet={image} type="image/webp" />
         <img alt={title} src={image} className="rounded-t-xl aspect-auto aspect-[3/2] max-h-[200px]" />
