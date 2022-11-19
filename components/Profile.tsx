@@ -17,7 +17,7 @@ export default function Profile() {
         <Image alt="Memo Chou" src="/demo.jpeg" height="460" width="460" className="w-24 h-24 rounded-full sm:w-36 sm:h-36 md:w-48 md:h-48" />
       </div>
       <div className="flex justify-center my-8">
-        <span className="text-xs font-light tracking-tighter sm:text-sm sm:tracking-tight md:text-lg md:tracking-normal dark:text-slate-300">
+        <span className="text-xs font-light tracking-tighter sm:text-sm sm:tracking-tight md:text-lg md:tracking-normal dark:text-slate-200">
           <a href="mailto:memochou1993@gmail.com">
             memochou1993@gmail.com
           </a>
