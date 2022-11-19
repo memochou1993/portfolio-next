@@ -25,10 +25,10 @@ export default function Profile() {
         <span className="text-xs font-light tracking-tighter sm:text-sm sm:tracking-tight md:text-lg md:tracking-normal dark:text-slate-200">
           <a href="mailto:memochou1993@gmail.com">
             <span className="dark:hover:text-white">
-              memochou1993@gmail.com
+              Memo Chou
             </span>
           </a>
-          {' · '}
+          {' @ '}
           Taipei, Taiwan
         </span>
       </div>
