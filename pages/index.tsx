@@ -15,6 +15,7 @@ import {
   Portfolio,
   Footer,
 } from '@/components';
+import colors from 'tailwindcss/colors';
 
 export default function Home() {
   const [isDark, setIsDark] = useState(true);
@@ -25,7 +26,7 @@ export default function Home() {
         <meta name="description" content="Memo's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-gradient-to-br from-slate-300 to-slate-200 dark:from-slate-900 dark:to-slate-800">
+      <div className="min-h-screen bg-slate-300 dark:bg-slate-900">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
           <nav className="flex justify-between text-slate-800 dark:text-slate-200">
             <div className="flex flex-row items-center">
@@ -40,7 +41,13 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-center w-8 h-8">
-              <button type="button" onClick={() => setIsDark(!isDark)}>
+              <button
+                type="button"
+                onClick={() => {
+                  document.documentElement.style.setProperty('background-color', colors.slate[isDark ? 300 : 900]);
+                  setIsDark(!isDark);
+                }}
+              >
                 <FontAwesomeIcon icon={isDark ? faSun : faMoon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
               </button>
             </div>
