@@ -15,10 +15,32 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
-// TODO
-// const links = [
-
-// ];
+const links = [
+  {
+    icon: faGithub,
+    link: 'https://github.com/memochou1993',
+  },
+  {
+    icon: faFacebook,
+    link: 'https://www.facebook.com/memochou1993',
+  },
+  {
+    icon: faLinkedin,
+    link: 'https://linkedin.com/in/memochou1993',
+  },
+  {
+    icon: faInstagram,
+    link: 'https://www.instagram.com/memochou1993',
+  },
+  {
+    icon: faTelegram,
+    link: 'https://telegram.me/memochou1993',
+  },
+  {
+    icon: faTwitter,
+    link: 'https://twitter.com/memochou1993',
+  },
+];
 
 export default function Profile() {
   return (
@@ -48,24 +70,13 @@ export default function Profile() {
             </div>
           </div>
           <div className="flex justify-between">
-            <a href="https://github.com/memochou1993" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faGithub} className="w-6 dark:text-slate-300 dark:hover:text-white" />
-            </a>
-            <a href="https://www.linkedin.com/in/memochou1993/" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faFacebook} className="w-6 dark:text-slate-300 dark:hover:text-white" />
-            </a>
-            <a href="https://linkedin.com/in/memochou1993" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} className="w-6 dark:text-slate-300 dark:hover:text-white" />
-            </a>
-            <a href="https://www.instagram.com/memochou1993/" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faInstagram} className="w-6 dark:text-slate-300 dark:hover:text-white" />
-            </a>
-            <a href="https://telegram.me/memochou1993" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faTelegram} className="w-6 dark:text-slate-300 dark:hover:text-white" />
-            </a>
-            <a href="https://twitter.com/memochou1993" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faTwitter} className="w-6 dark:text-slate-300 dark:hover:text-white" />
-            </a>
+            {
+              links.map(({ icon, link }) => (
+                <a href={link} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={icon} className="w-6 dark:text-slate-300 dark:hover:text-white" />
+                </a>
+              ))
+            }
           </div>
         </div>
       </div>
