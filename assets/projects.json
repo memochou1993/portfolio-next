@@ -4,7 +4,9 @@
     "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/37.jpg",
     "link": "https://portfolio.epoch.tw/works/37",
     "tags": [
-      "Solidity"
+      "Solidity",
+      "Vue",
+      "Blockchain"
     ]
   },
   {
@@ -17,11 +19,80 @@
     ]
   },
   {
-    "title": "Password Manager",
+    "title": "Password Manager 2.0",
     "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/35.jpg",
     "link": "https://portfolio.epoch.tw/works/35",
     "tags": [
-      "Go"
+      "Go",
+      "React",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Crypto Donation",
+    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/34.jpg",
+    "link": "https://portfolio.epoch.tw/works/34",
+    "tags": [
+      "Go",
+      "React",
+      "Blockchain"
+    ]
+  },
+  {
+    "title": "Thesaurus Builder",
+    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/32.jpg",
+    "link": "https://portfolio.epoch.tw/works/32",
+    "tags": [
+      "Go",
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "Localiser",
+    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/30.jpg",
+    "link": "https://portfolio.epoch.tw/works/30",
+    "tags": [
+      "Laravel",
+      "Vue",
+      "Go",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "URL Shortener 2.0",
+    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/28.jpg",
+    "link": "https://portfolio.epoch.tw/works/28",
+    "tags": [
+      "Go",
+      "Vue",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Time Clock",
+    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/31.jpg",
+    "link": "https://portfolio.epoch.tw/works/31",
+    "tags": [
+      "Go",
+      "Vue"
+    ]
+  },
+  {
+    "title": "Password Generator",
+    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/29.jpg",
+    "link": "https://portfolio.epoch.tw/works/29",
+    "tags": [
+      "Vue"
+    ]
+  },
+  {
+    "title": "GH Ranking",
+    "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/27.jpg",
+    "link": "https://portfolio.epoch.tw/works/27",
+    "tags": [
+      "Go",
+      "Vue",
+      "MongoDB"
     ]
   }
 ]
