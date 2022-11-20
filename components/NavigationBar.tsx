@@ -22,7 +22,7 @@ export default function NavigationBar() {
       <div className="flex flex-row items-center">
         {
           sections.map(({ link, text }) => (
-            <div key={link} className="mr-4 text-xl hover:underline hover:decoration-1 hover:underline-offset-4">
+            <div key={link} className="mr-4 text-lg sm:text-xl hover:underline hover:decoration-1 hover:underline-offset-4">
               <a href={link}>
                 {text}
               </a>

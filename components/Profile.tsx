@@ -46,7 +46,7 @@ export default function Profile() {
   return (
     <>
       <div className="flex justify-center mb-8 sm:mb-10 md:mb-12">
-        <Image alt="Memo Chou" src="/avatar.jpeg" height="460" width="460" className="w-32 h-32 rounded-full sm:w-36 sm:h-36 md:w-40 md:h-40" />
+        <Image alt="Memo Chou" src="/avatar.jpg" height="1500" width="1500" className="w-32 h-32 rounded-full sm:w-36 sm:h-36 md:w-40 md:h-40" />
       </div>
       <div className="flex justify-center">
         <div className="flex flex-col text-slate-800 dark:text-slate-200">
