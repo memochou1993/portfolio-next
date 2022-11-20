@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
 import {
+  ArticleList,
   About,
   Divider,
   Footer,
@@ -40,6 +41,9 @@ export default function Home() {
             <Divider id="projects" />
             <Heading text="Projects" />
             <ProjectList />
+            <Divider id="articles" />
+            <Heading text="Articles" />
+            <ArticleList />
           </main>
           <Footer />
         </div>
