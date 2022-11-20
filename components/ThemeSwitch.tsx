@@ -15,7 +15,7 @@ export default function ThemeSwitch() {
   };
   return (
     <button type="button" onClick={handleClick}>
-      <FontAwesomeIcon icon={isDark ? faSun : faMoon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
+      <FontAwesomeIcon icon={isDark ? faSun : faMoon} className="w-6 h-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
     </button>
   );
 }

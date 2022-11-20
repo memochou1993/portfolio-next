@@ -30,9 +30,7 @@ export default function NavigationBar() {
           ))
         }
       </div>
-      <div className="flex items-center justify-center w-8 h-8">
-        <ThemeSwitch />
-      </div>
+      <ThemeSwitch />
     </nav>
   );
 }

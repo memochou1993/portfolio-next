@@ -5,6 +5,7 @@ import {
   ArticleList,
   About,
   Divider,
+  Elevator,
   Footer,
   Heading,
   NavigationBar,
@@ -45,6 +46,7 @@ export default function Home() {
             <Heading text="Articles" />
             <ArticleList />
           </main>
+          <Elevator />
           <Footer />
         </div>
       </div>
