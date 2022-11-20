@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Script from 'next/script';
 import {
   About,
   Divider,
@@ -43,6 +44,19 @@ export default function Home() {
           <Footer />
         </div>
       </div>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-RK2ZEFCDK7"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-RK2ZEFCDK7');
+        `}
+      </Script>
     </div>
   );
 }
