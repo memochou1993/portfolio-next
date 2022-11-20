@@ -18,15 +18,15 @@ const sections = [
 
 export default function NavigationBar() {
   return (
-    <nav className="flex justify-between text-slate-800 dark:text-slate-200">
-      <div className="flex flex-row items-center">
+    <nav className="flex items-center justify-between text-slate-800 dark:text-slate-200">
+      <div>
         {
           sections.map(({ link, text }) => (
-            <div key={link} className="mr-4 text-lg sm:text-xl hover:underline hover:decoration-1 hover:underline-offset-4">
-              <a href={link}>
+            <a key={link} href={link}>
+              <span className="mr-4 text-lg sm:text-xl hover:underline hover:decoration-1 hover:underline-offset-4">
                 {text}
-              </a>
-            </div>
+              </span>
+            </a>
           ))
         }
       </div>

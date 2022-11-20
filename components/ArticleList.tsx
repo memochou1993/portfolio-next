@@ -55,11 +55,11 @@ export default function ArticleList() {
           const [year, month, day] = (new Date(published)).toLocaleDateString().split('/');
           return (
             <div key={title} className="py-4 text-slate-800 dark:text-slate-200">
+              <span className="mr-4">
+                {`${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`}
+              </span>
               <a href={link} target="_blank" rel="noreferrer">
-                <span className="mr-4">
-                  {`${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`}
-                </span>
-                <span>
+                <span className="hover:underline hover:decoration-1 hover:underline-offset-4">
                   {title}
                 </span>
               </a>
