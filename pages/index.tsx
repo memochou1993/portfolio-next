@@ -12,7 +12,7 @@ import {
   Heading,
   Profile,
   About,
-  Portfolio,
+  ProjectList,
   Footer,
 } from '@/components';
 import colors from 'tailwindcss/colors';
@@ -31,13 +31,19 @@ export default function Home() {
           <nav className="flex justify-between text-slate-800 dark:text-slate-200">
             <div className="flex flex-row items-center">
               <div className="mr-4 text-xl underline decoration-1 underline-offset-2">
-                About
+                <a href="#about">
+                  About
+                </a>
               </div>
               <div className="mr-4 text-xl underline decoration-1 underline-offset-2">
-                Projects
+                <a href="#projects">
+                  Projects
+                </a>
               </div>
               <div className="mr-4 text-xl underline decoration-1 underline-offset-2">
-                Articles
+                <a href="#articles">
+                  Articles
+                </a>
               </div>
             </div>
             <div className="flex items-center justify-center w-8 h-8">
@@ -54,12 +60,12 @@ export default function Home() {
           </nav>
           <main className="my-12">
             <Profile />
-            <Divider />
+            <Divider id="about" />
             <Heading text="About" />
             <About />
-            <Divider />
+            <Divider id="projects" />
             <Heading text="Projects" />
-            <Portfolio />
+            <ProjectList />
           </main>
           <Footer />
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import projects from '../assets/projects.json';
 
-export default function Portfolio() {
+export default function ProjectList() {
   return (
     <div className="flex justify-center">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 xl:grid-cols-3 xl:gap-12">
