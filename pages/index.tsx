@@ -1,21 +1,14 @@
-import React, {
-  useState,
-} from 'react';
+import React from 'react';
 import Head from 'next/head';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSun,
-  faMoon,
-} from '@fortawesome/free-solid-svg-icons';
 import {
   Divider,
   Heading,
   Profile,
   About,
   ProjectList,
+  ThemeSwitch,
   Footer,
 } from '@/components';
-import colors from 'tailwindcss/colors';
 
 const sections = [
   {
@@ -33,9 +26,8 @@ const sections = [
 ];
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(true);
   return (
-    <div className={isDark ? 'dark' : ''}>
+    <div id="app" className="dark">
       <Head>
         <title>Memo Chou</title>
         <meta name="description" content="Memo's Portfolio" />
@@ -47,7 +39,7 @@ export default function Home() {
             <div className="flex flex-row items-center">
               {
                 sections.map(({ link, text }) => (
-                  <div className="mr-4 text-xl hover:underline hover:decoration-1 hover:underline-offset-4">
+                  <div key={link} className="mr-4 text-xl hover:underline hover:decoration-1 hover:underline-offset-4">
                     <a href={link}>
                       {text}
                     </a>
@@ -56,15 +48,7 @@ export default function Home() {
               }
             </div>
             <div className="flex items-center justify-center w-8 h-8">
-              <button
-                type="button"
-                onClick={() => {
-                  document.documentElement.style.setProperty('background-color', colors.slate[isDark ? 300 : 900]);
-                  setIsDark(!isDark);
-                }}
-              >
-                <FontAwesomeIcon icon={isDark ? faSun : faMoon} className="w-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
-              </button>
+              <ThemeSwitch />
             </div>
           </nav>
           <main className="my-12">
