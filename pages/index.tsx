@@ -17,6 +17,21 @@ import {
 } from '@/components';
 import colors from 'tailwindcss/colors';
 
+const sections = [
+  {
+    link: '#about',
+    text: 'About',
+  },
+  {
+    link: '#projects',
+    text: 'Projects',
+  },
+  {
+    link: '#articles',
+    text: 'Articles',
+  },
+];
+
 export default function Home() {
   const [isDark, setIsDark] = useState(true);
   return (
@@ -30,21 +45,15 @@ export default function Home() {
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
           <nav className="flex justify-between text-slate-800 dark:text-slate-200">
             <div className="flex flex-row items-center">
-              <div className="mr-4 text-xl underline decoration-1 underline-offset-2">
-                <a href="#about">
-                  About
-                </a>
-              </div>
-              <div className="mr-4 text-xl underline decoration-1 underline-offset-2">
-                <a href="#projects">
-                  Projects
-                </a>
-              </div>
-              <div className="mr-4 text-xl underline decoration-1 underline-offset-2">
-                <a href="#articles">
-                  Articles
-                </a>
-              </div>
+              {
+                sections.map(({ link, text }) => (
+                  <div className="mr-4 text-xl hover:underline hover:decoration-1 hover:underline-offset-4">
+                    <a href={link}>
+                      {text}
+                    </a>
+                  </div>
+                ))
+              }
             </div>
             <div className="flex items-center justify-center w-8 h-8">
               <button
