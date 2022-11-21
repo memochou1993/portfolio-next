@@ -53,20 +53,32 @@ export default function Profile() {
           <div className="text-4xl font-bold tracking-wider">
             Memo Chou
           </div>
-          <div className="flex flex-col my-4">
-            <div className="inline-flex text-sm">
-              <FontAwesomeIcon icon={faBuilding} className="w-3 mx-2" />
-              KKLab
+          <div className="flex flex-col my-4 text-sm">
+            <div className="flex items-center">
+              <div>
+                <FontAwesomeIcon icon={faBuilding} className="w-3 mx-2" />
+              </div>
+              <div>
+                KKLab
+              </div>
             </div>
-            <div className="inline-flex text-sm">
-              <FontAwesomeIcon icon={faEnvelope} className="w-3 mx-2" />
-              <a href="mailto:memochou1993@gmail.com">
-                memochou1993@gmail.com
-              </a>
+            <div className="flex items-center">
+              <div>
+                <FontAwesomeIcon icon={faEnvelope} className="w-3 mx-2" />
+              </div>
+              <div>
+                <a href="mailto:memochou1993@gmail.com">
+                  memochou1993@gmail.com
+                </a>
+              </div>
             </div>
-            <div className="inline-flex text-sm">
-              <FontAwesomeIcon icon={faMapMarkerAlt} className="w-3 mx-2" />
-              Taipei, Taiwan
+            <div className="flex items-center">
+              <div>
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="w-3 mx-2" />
+              </div>
+              <div>
+                Taipei, Taiwan
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-between">
