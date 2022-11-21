@@ -1,7 +1,7 @@
 const projects = [
   {
     title: 'Particle Staking',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/37.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/37.jpg',
     link: 'https://portfolio.epoch.tw/works/37',
     tags: [
       '2022',
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Paint App',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/36.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/36.jpg',
     link: 'https://portfolio.epoch.tw/works/36',
     tags: [
       '2022',
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: 'Password Manager 2.0',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/35.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/35.jpg',
     link: 'https://portfolio.epoch.tw/works/35',
     tags: [
       '2022',
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     title: 'Crypto Donation',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/34.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/34.jpg',
     link: 'https://portfolio.epoch.tw/works/34',
     tags: [
       '2022',
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: 'Thesaurus Builder',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/32.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/32.jpg',
     link: 'https://portfolio.epoch.tw/works/32',
     tags: [
       '2022',
@@ -54,7 +54,7 @@ const projects = [
   },
   {
     title: 'Localiser',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/30.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/30.jpg',
     link: 'https://portfolio.epoch.tw/works/30',
     tags: [
       '2021',
@@ -66,7 +66,7 @@ const projects = [
   },
   {
     title: 'URL Shortener 2.0',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/28.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/28.jpg',
     link: 'https://portfolio.epoch.tw/works/28',
     tags: [
       '2021',
@@ -77,7 +77,7 @@ const projects = [
   },
   {
     title: 'Time Clock',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/31.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/31.jpg',
     link: 'https://portfolio.epoch.tw/works/31',
     tags: [
       '2021',
@@ -87,7 +87,7 @@ const projects = [
   },
   {
     title: 'Password Generator',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/29.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/29.jpg',
     link: 'https://portfolio.epoch.tw/works/29',
     tags: [
       '2021',
@@ -96,7 +96,7 @@ const projects = [
   },
   {
     title: 'GH Rankings',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/27.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/27.jpg',
     link: 'https://portfolio.epoch.tw/works/27',
     tags: [
       '2021',
@@ -107,7 +107,7 @@ const projects = [
   },
   {
     title: 'Worker Service',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/33.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/33.jpg',
     link: 'https://portfolio.epoch.tw/works/33',
     tags: [
       '2021',
@@ -118,7 +118,7 @@ const projects = [
   },
   {
     title: 'Lexicon',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/26.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/26.jpg',
     link: 'https://portfolio.epoch.tw/works/26',
     tags: [
       '2020',
@@ -128,7 +128,7 @@ const projects = [
   },
   {
     title: 'Profit & Loss Calculator',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/25.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/25.jpg',
     link: 'https://portfolio.epoch.tw/works/25',
     tags: [
       '2020',
@@ -137,7 +137,7 @@ const projects = [
   },
   {
     title: 'Image Crawler',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/24.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/24.jpg',
     link: 'https://portfolio.epoch.tw/works/24',
     tags: [
       '2020',
@@ -147,7 +147,7 @@ const projects = [
   },
   {
     title: 'Chat App',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/23.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/23.jpg',
     link: 'https://portfolio.epoch.tw/works/23',
     tags: [
       '2020',
@@ -157,7 +157,7 @@ const projects = [
   },
   {
     title: 'AAT Thesaurus',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/22.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/22.jpg',
     link: 'https://portfolio.epoch.tw/works/22',
     tags: [
       '2020',
@@ -168,7 +168,7 @@ const projects = [
   },
   {
     title: 'JSON Editor',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/21.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/21.jpg',
     link: 'https://portfolio.epoch.tw/works/21',
     tags: [
       '2019',
@@ -179,7 +179,7 @@ const projects = [
   },
   {
     title: 'Password Manager',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/19.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/19.jpg',
     link: 'https://portfolio.epoch.tw/works/19',
     tags: [
       '2019',
@@ -190,7 +190,7 @@ const projects = [
   },
   {
     title: '104 Calculator',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/20.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/20.jpg',
     link: 'https://portfolio.epoch.tw/works/20',
     tags: [
       '2019',
@@ -199,7 +199,7 @@ const projects = [
   },
   {
     title: 'Memo\'s Portfolio',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/18.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/18.jpg',
     link: 'https://portfolio.epoch.tw/works/18',
     tags: [
       '2018',
@@ -209,7 +209,7 @@ const projects = [
   },
   {
     title: 'URL Shortener',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/16.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/16.jpg',
     link: 'https://portfolio.epoch.tw/works/16',
     tags: [
       '2018',
@@ -219,7 +219,7 @@ const projects = [
   },
   {
     title: 'KUNTAI',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/10.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/10.jpg',
     link: 'https://portfolio.epoch.tw/works/10',
     tags: [
       '2018',
@@ -229,7 +229,7 @@ const projects = [
   },
   {
     title: 'Homework Manager',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/8.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/8.jpg',
     link: 'https://portfolio.epoch.tw/works/8',
     tags: [
       '2017',
@@ -239,7 +239,7 @@ const projects = [
   },
   {
     title: 'Lunch Order System',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/7.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/7.jpg',
     link: 'https://portfolio.epoch.tw/works/7',
     tags: [
       '2017',
@@ -249,7 +249,7 @@ const projects = [
   },
   {
     title: 'Archive',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/2.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/2.jpg',
     link: 'https://portfolio.epoch.tw/works/2',
     tags: [
       '2017',
@@ -259,7 +259,7 @@ const projects = [
   },
   {
     title: 'Course Reviews',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/6.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/6.jpg',
     link: 'https://portfolio.epoch.tw/works/6',
     tags: [
       '2017',
@@ -269,7 +269,7 @@ const projects = [
   },
   {
     title: 'Video Order System',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/3.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/3.jpg',
     link: 'https://portfolio.epoch.tw/works/3',
     tags: [
       '2015',
@@ -279,7 +279,7 @@ const projects = [
   },
   {
     title: 'Railway Stations',
-    image: 'https://portfolio.epoch.tw/images/screenshots/original/1.jpg',
+    image: 'https://portfolio.epoch.tw/images/screenshots/thumbnail/1.jpg',
     link: 'https://portfolio.epoch.tw/works/1',
     tags: [
       '2014',
