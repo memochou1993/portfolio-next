@@ -26,9 +26,6 @@ export default function Elevator() {
   const mounted = useRef(false);
   const element = useRef(null);
   const visible = useRef(false);
-  const handleClick = () => {
-    // TODO
-  };
   useEffect(() => {
     const target = element.current as HTMLElement | null;
     if (mounted.current) return;
@@ -50,7 +47,7 @@ export default function Elevator() {
     <div ref={element} className="absolute transition opacity-0 fade-in-out delay-250">
       <div className="fixed invisible text-right bottom-12 right-12 sm:visible text-slate-700 dark:text-slate-300">
         <div className="flex items-center justify-end">
-          <button type="button" onClick={handleClick}>
+          <button type="button" onClick={() => window.scrollTo({ top: 0 })}>
             <FontAwesomeIcon icon={faArrowUp} className="w-3" />
           </button>
         </div>
