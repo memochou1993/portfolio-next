@@ -10,8 +10,8 @@ const LIMIT = 6;
 export default function ProjectList() {
   const [page, setPage] = useState(1);
   return (
-    <div className="flex flex-col justify-center">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 xl:grid-cols-3 xl:gap-12">
+    <>
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 lg:gap-12">
         {
           projects.map(({
             title,
@@ -19,7 +19,7 @@ export default function ProjectList() {
             link,
             tags,
           }, i) => (
-            <div key={title} className={i < LIMIT * page ? '' : 'hidden'}>
+            <div key={title} className={`flex justify-center ${i < LIMIT * page ? '' : 'hidden'}`}>
               <ProjectItem
                 key={title}
                 title={title}
@@ -38,6 +38,6 @@ export default function ProjectList() {
           </div>
         )
       }
-    </div>
+    </>
   );
 }
