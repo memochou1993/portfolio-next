@@ -13,12 +13,7 @@ import {
   ProjectList,
   Sidebar,
 } from '@/components';
-
-const meta = {
-  author: 'Memo Chou',
-  title: 'Memo Chou',
-  description: 'I\'m Memo Chou, a creative developer passionate about Go, PHP, Rust and JavaScript.',
-};
+import meta from '../assets/meta';
 
 export default function Home({ articles }: any) {
   return (
@@ -26,11 +21,14 @@ export default function Home({ articles }: any) {
       <Head>
         <link rel="icon" href="/favicon.png" />
         <title>{meta.title}</title>
-        <meta name="author" content={meta.title} />
+        <meta name="author" content={meta.author} />
         <meta name="description" content={meta.description} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
+        <meta property="og:image" content={meta.image} />
+        <meta property="og:image:alt" content={meta.title} />
+        <meta property="og:image:type" content="image/png" />
       </Head>
       <div className="min-h-screen bg-slate-300 dark:bg-slate-900">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
