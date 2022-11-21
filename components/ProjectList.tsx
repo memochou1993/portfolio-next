@@ -19,15 +19,17 @@ export default function ProjectList() {
             link,
             tags,
           }, i) => (
-            <div key={title} className={`flex justify-center ${i < LIMIT * page ? '' : 'hidden'}`}>
-              <ProjectItem
-                key={title}
-                title={title}
-                image={image}
-                link={link}
-                tags={tags}
-              />
-            </div>
+            i < LIMIT * page && (
+              <div key={title} className="flex justify-center">
+                <ProjectItem
+                  key={title}
+                  title={title}
+                  image={image}
+                  link={link}
+                  tags={tags}
+                />
+              </div>
+            )
           ))
         }
       </div>
