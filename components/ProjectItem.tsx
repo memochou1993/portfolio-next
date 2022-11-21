@@ -35,7 +35,7 @@ export default function Card({
             tags.map((tag, i) => (
               <span key={tag}>
                 {`#${tag}`}
-                {`${i < tags.length - 1 ? ' ' : ''}`}
+                {i < tags.length - 1 ? ' ' : ''}
               </span>
             ))
           }

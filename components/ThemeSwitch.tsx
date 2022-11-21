@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, {
+  useState,
+} from 'react';
 import colors from 'tailwindcss/colors';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
