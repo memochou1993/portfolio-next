@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import ProjectItem from './ProjectItem';
 import projects from '../assets/projects';
 
 export default function ProjectList() {
@@ -13,7 +13,7 @@ export default function ProjectList() {
             link,
             tags,
           }) => (
-            <Card
+            <ProjectItem
               key={title}
               title={title}
               image={image}

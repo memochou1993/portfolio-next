@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowRight,
@@ -19,10 +20,7 @@ export default function Card({
 }: Props) {
   return (
     <div className="max-w-sm border rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
-      <picture>
-        <source srcSet={image} type="image/webp" />
-        <img alt={title} src={image} className="rounded-t-xl aspect-auto aspect-[3/2] max-h-[200px]" />
-      </picture>
+      <Image alt={title} src={image} width="300" height="200" className="rounded-t-xl aspect-[3/2]" />
       <hr className="h-px border-0 bg-slate-500" />
       <div className="px-4 py-6">
         <div className="mb-4">
