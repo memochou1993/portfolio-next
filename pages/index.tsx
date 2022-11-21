@@ -5,12 +5,12 @@ import {
   ArticleList,
   About,
   Divider,
-  Elevator,
   Footer,
+  Header,
   Heading,
-  NavigationBar,
   Profile,
   ProjectList,
+  Sidebar,
 } from '@/components';
 
 const meta = {
@@ -33,7 +33,7 @@ export default function Home() {
       </Head>
       <div className="min-h-screen bg-slate-300 dark:bg-slate-900">
         <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
-          <NavigationBar />
+          <Header />
           <main className="my-12">
             <Profile />
             <Divider id="about" />
@@ -46,7 +46,7 @@ export default function Home() {
             <Heading text="Articles" />
             <ArticleList />
           </main>
-          <Elevator />
+          <Sidebar />
           <Footer />
         </div>
       </div>

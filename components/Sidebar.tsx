@@ -7,6 +7,21 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const OFFSET = 500;
 
+const sections = [
+  {
+    link: '#about',
+    text: 'About',
+  },
+  {
+    link: '#projects',
+    text: 'Projects',
+  },
+  {
+    link: '#articles',
+    text: 'Articles',
+  },
+];
+
 export default function Elevator() {
   const mounted = useRef(false);
   const element = useRef(null);
@@ -32,10 +47,27 @@ export default function Elevator() {
     mounted.current = true;
   }, []);
   return (
-    <div className="absolute">
-      <button type="button" onClick={handleClick} ref={element} className="fixed transition opacity-0 fade-in-out delay-250 bottom-12 right-12">
-        <FontAwesomeIcon icon={faArrowUp} className="w-6 h-6 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100" />
-      </button>
+    <div ref={element} className="absolute transition opacity-0 fade-in-out delay-250">
+      <div className="fixed invisible text-right bottom-12 right-12 sm:visible dark:text-slate-300">
+        <div className="flex items-center justify-end">
+          <button type="button" onClick={handleClick}>
+            <FontAwesomeIcon icon={faArrowUp} className="w-3" />
+          </button>
+        </div>
+        <nav>
+          {
+            sections.map(({ link, text }) => (
+              <div key={link} className="mt-2">
+                <a href={link}>
+                  <span className="hover:underline hover:decoration-1 hover:underline-offset-4">
+                    {text}
+                  </span>
+                </a>
+              </div>
+            ))
+          }
+        </nav>
+      </div>
     </div>
   );
 }

@@ -79,7 +79,7 @@ export default function ArticleList() {
               <span className="mr-2">
                 Load more
               </span>
-              <FontAwesomeIcon icon={faArrowDown} width="12" className="dark:text-slate-300" />
+              <FontAwesomeIcon icon={faArrowDown} className="w-3 dark:text-slate-300" />
             </button>
           </div>
         )

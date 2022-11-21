@@ -44,7 +44,7 @@ export default function Card({
           <span className="mr-2">
             Read more
           </span>
-          <FontAwesomeIcon icon={faArrowRight} width="12" className="dark:text-slate-300" />
+          <FontAwesomeIcon icon={faArrowRight} className="w-3 dark:text-slate-300" />
         </a>
       </div>
     </div>
