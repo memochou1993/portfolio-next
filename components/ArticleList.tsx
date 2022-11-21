@@ -10,21 +10,18 @@ export default function ArticleList({ articles }: any) {
   return (
     <div className="w-full px-8 border divide-y divide-slate-500 rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
       {
-        articles.map(({ title, link, published }: any, i: number) => {
-          const [year, month, day] = (new Date(published)).toLocaleDateString().split('/');
-          return (
-            <div key={title} className={`px-1 py-4 text-slate-800 dark:text-slate-200 ${i < LIMIT * page ? '' : 'hidden'}`}>
-              <span className="mr-4">
-                {`${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`}
+        articles.map(({ title, link, published }: any, i: number) => (
+          <div key={title} className={`px-1 py-4 text-slate-800 dark:text-slate-200 ${i < LIMIT * page ? '' : 'hidden'}`}>
+            <span className="mr-4">
+              {published.slice(0, 10)}
+            </span>
+            <a href={link} target="_blank" rel="noreferrer">
+              <span className="hover:underline hover:decoration-1 hover:underline-offset-4">
+                {title}
               </span>
-              <a href={link} target="_blank" rel="noreferrer">
-                <span className="hover:underline hover:decoration-1 hover:underline-offset-4">
-                  {title}
-                </span>
-              </a>
-            </div>
-          );
-        })
+            </a>
+          </div>
+        ))
       }
       {
         page < articles.length / LIMIT && (
