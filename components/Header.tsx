@@ -1,6 +1,6 @@
 import React from 'react';
 import ThemeSwitch from './ThemeSwitch';
-import sections from '../assets/sections';
+import sections from '../assets/sections.json';
 
 export default function NavigationBar() {
   return (

@@ -14,7 +14,7 @@ import {
   faTelegram,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-import meta from '../assets/meta';
+import meta from '../assets/meta.json';
 
 const links = [
   {

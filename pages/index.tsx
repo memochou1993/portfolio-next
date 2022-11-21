@@ -13,7 +13,7 @@ import {
   ProjectList,
   Sidebar,
 } from '@/components';
-import meta from '../assets/meta';
+import meta from '../assets/meta.json';
 
 export default function Home({ articles }: any) {
   return (

@@ -2,8 +2,8 @@ import React, {
   useState,
 } from 'react';
 import ProjectItem from './ProjectItem';
-import projects from '../assets/projects';
 import LoadMoreButton from './LoadMoreButton';
+import projects from '../assets/projects.json';
 
 const LIMIT = 6;
 

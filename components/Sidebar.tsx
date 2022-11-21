@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowUp,
 } from '@fortawesome/free-solid-svg-icons';
-import sections from '../assets/sections';
+import sections from '../assets/sections.json';
 
 const OFFSET = 4 * 12 + 28;
 
