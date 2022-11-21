@@ -1,20 +1,6 @@
 import React from 'react';
 import ThemeSwitch from './ThemeSwitch';
-
-const sections = [
-  {
-    link: '#about',
-    text: 'About',
-  },
-  {
-    link: '#projects',
-    text: 'Projects',
-  },
-  {
-    link: '#articles',
-    text: 'Articles',
-  },
-];
+import sections from '../assets/sections';
 
 export default function NavigationBar() {
   return (

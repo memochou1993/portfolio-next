@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import projects from '../assets/projects.json';
+import projects from '../assets/projects';
 
 export default function ProjectList() {
   return (

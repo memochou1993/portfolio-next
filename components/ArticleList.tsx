@@ -4,7 +4,9 @@ import React, {
   useState,
 } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowDown,
+} from '@fortawesome/free-solid-svg-icons';
 
 interface ArticleProps {
   title: string;

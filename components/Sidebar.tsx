@@ -3,24 +3,12 @@ import React, {
   useRef,
 } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowUp,
+} from '@fortawesome/free-solid-svg-icons';
+import sections from '../assets/sections';
 
-const OFFSET = 500;
-
-const sections = [
-  {
-    link: '#about',
-    text: 'About',
-  },
-  {
-    link: '#projects',
-    text: 'Projects',
-  },
-  {
-    link: '#articles',
-    text: 'Articles',
-  },
-];
+const OFFSET = 4 * 12 + 28;
 
 export default function Elevator() {
   const mounted = useRef(false);
