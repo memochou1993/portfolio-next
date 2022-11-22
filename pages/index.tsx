@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
-import xml2js from 'xml2js';
 import {
   ArticleList,
   About,
@@ -15,7 +14,7 @@ import {
 } from '@/components';
 import meta from '../assets/meta.json';
 
-export default function Home({ articles }: any) {
+export default function Home() {
   return (
     <div id="app" className="dark">
       <Head>
@@ -43,7 +42,7 @@ export default function Home({ articles }: any) {
             <ProjectList />
             <Divider id="articles" />
             <Heading text="Articles" />
-            <ArticleList articles={articles} />
+            <ArticleList />
           </main>
           <Sidebar />
           <Footer />
@@ -64,20 +63,4 @@ export default function Home({ articles }: any) {
       </Script>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const res = await fetch('https://blog.epoch.tw/atom.xml') as Response;
-  const str = await res.text();
-  const doc = await xml2js.parseStringPromise(str);
-  const articles = doc.feed.entry.map((entry: any) => ({
-    title: entry.title[0],
-    link: entry.link[0].$.href,
-    published: entry.published[0],
-  }));
-  return {
-    props: {
-      articles,
-    },
-  };
 }
