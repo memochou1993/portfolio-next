@@ -30,8 +30,9 @@ export default function Home() {
         <meta property="og:image:type" content="image/png" />
       </Head>
       <div className="min-h-screen bg-slate-300 dark:bg-slate-900">
-        <div className="container px-16 py-12 mx-auto sm:px-24 md:px-32">
+        <div className="container px-16 py-8 mx-auto sm:px-24 sm:py-10 md:px-32 md:py-12">
           <Header />
+          <Sidebar />
           <main className="my-12">
             <Profile />
             <Divider id="about" />
@@ -44,7 +45,7 @@ export default function Home() {
             <Heading text="Articles" />
             <ArticleList />
           </main>
-          <Sidebar />
+          <Divider id="" />
           <Footer />
         </div>
       </div>
