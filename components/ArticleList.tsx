@@ -28,7 +28,7 @@ export default function ArticleList() {
     mounted.current = true;
   }, []);
   return (
-    <div className="w-full px-8 border divide-y divide-slate-500 rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
+    <div className="w-full px-6 border divide-y divide-slate-500 rounded-xl border-slate-500 bg-slate-200 dark:bg-slate-800">
       {
         articles.map(({ title, link, published }, i) => (
           i < LIMIT * page && (
