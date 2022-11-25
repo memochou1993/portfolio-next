@@ -10,7 +10,7 @@ import sections from '../assets/sections.json';
 
 const OFFSET = 4 * 12 + 28;
 
-export default function Elevator() {
+export default function Sidebar() {
   const mounted = useRef(false);
   const element = useRef(null);
   const visible = useRef(false);

@@ -12,7 +12,7 @@ interface Props {
   tags: Array<string>;
 }
 
-export default function Card({
+export default function ProjectItem({
   title,
   image,
   link,

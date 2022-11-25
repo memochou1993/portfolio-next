@@ -2,7 +2,7 @@ import React from 'react';
 import ThemeSwitch from './ThemeSwitch';
 import sections from '../assets/sections.json';
 
-export default function NavigationBar() {
+export default function Header() {
   return (
     <nav className="flex items-center justify-between text-slate-800 dark:text-slate-200">
       <div>
