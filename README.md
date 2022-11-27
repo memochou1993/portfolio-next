@@ -1,34 +1,349 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nyan Profile
+
+![Dark Theme](demo.png)
+
+## About
+
+Nyan Profile is a simple and extensible scaffold for building personal profile website.
+
+## Features
+
+- Static Generation with Next.js
+- Styling with Tailwind CSS
+- Configurable Components
+  - Profile
+  - Header
+    - Theme Switch
+  - Sidebar
+  - Footer
+  - About
+  - Google Fonts
+  - Google Analytics
+  - Project List
+  - Article List
+- Deploying to GitHub Pages with GitHub Actions
 
 ## Getting Started
 
-First, run the development server:
+### Automatic Setup
+
+Create a new project by running the following command.
+
+```bash
+npm init @memochou1993/nyan-profile my-profile
+```
+
+Change directory into project.
+
+```bash
+cd my-profile
+```
+
+Start the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Manual Setup
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Clone the project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+git clone git@github.com:memochou1993/nyan-profile.git
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Change directory into project.
 
-## Learn More
+```bash
+cd nyan-profile
+```
 
-To learn more about Next.js, take a look at the following resources:
+Initialize a new Git repository.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit"
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Install dependencies.
 
-## Deploy on Vercel
+```bash
+npm ci
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the development server.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run dev
+```
+
+## Showcase
+
+- [King Nyan II](https://memochou1993.github.io/nyan-profile/)
+- [Memo Chou](https://profile.epoch.tw)
+
+## Configuration
+
+### Base URL
+
+```json
+{
+  "basePath": "/<repository_name>"
+}
+```
+
+### Theme
+
+```json
+{
+  "theme": {
+    "mode": "<light|dark>",
+    "light": {
+      "background": "<light_color>"
+    },
+    "dark": {
+      "background": "<dark_color>"
+    }
+  }
+}
+```
+
+### Meta
+
+```json
+{
+  "meta": {
+    "author": "<website_author>",
+    "title": "<website_title>",
+    "description": "<website_description>",
+    "image": "<website_image_path>"
+  }
+}
+```
+
+### Components
+
+#### Profile
+
+```json
+{
+  "components": {
+    "profile": {
+      "enabled": true,
+      "avatar": "<your_avatar_image_path>",
+      "name": "<your_name>",
+      "organization": "<your_organization>",
+      "location": "<your_location>",
+      "email": "<your_email>",
+      "url": "<your_website_url>",
+      "socialLinks": {
+        "github": {
+          "id": "<id>"
+        },
+        "facebook": {
+          "id": "<id>"
+        },
+        "linkedin": {
+          "id": "<id>"
+        },
+        "instagram": {
+          "id": "<id>"
+        },
+        "telegram": {
+          "id": "<id>"
+        },
+        "twitter": {
+          "id": "<id>"
+        }
+      }
+    }
+  }
+}
+```
+
+#### Header
+
+```json
+{
+  "components": {
+    "header": {
+      "enabled": true,
+      "components": {
+        "themeSwitch": {
+          "enabled": true
+        }
+      }
+    }
+  }
+}
+```
+
+#### Sidebar
+
+```json
+{
+  "components": {
+    "sidebar": {
+      "enabled": true
+    }
+  }
+}
+```
+
+#### Footer
+
+```json
+{
+  "components": {
+    "footer": {
+      "enabled": true
+    }
+  }
+}
+```
+
+#### About
+
+```json
+{
+  "components": {
+    "about": {
+      "enabled": true,
+      "title": "About"
+    }
+  }
+}
+```
+
+#### GoogleFonts
+
+```json
+{
+  "components": {
+    "googleFonts": {
+      "enabled": true,
+      "family": "<font_family>"
+    }
+  }
+}
+```
+
+#### GoogleAnalytics
+
+```json
+{
+  "components": {
+    "googleAnalytics": {
+      "enabled": true,
+      "id": "<ga4_measurement_id>"
+    }
+  }
+}
+```
+
+#### ProjectList
+
+```json
+{
+  "components": {
+    "projectList": {
+      "enabled": true,
+      "title": "Projects",
+      "limit": 3,
+      "items": [
+        {
+          "name": "<project_name>",
+          "link": "<project_link>",
+          "image": "<project_image>",
+          "tags": [
+            "<project_tag>"
+          ],
+          "button": {
+            "text": "<button_text>"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+#### ArticleList
+
+```json
+{
+  "components": {
+    "articleList": {
+      "enabled": false,
+      "title": "Articles",
+      "limit": 10,
+      "source": "<rss_xml_path>",
+      "entrySpec": {
+        "key": "<entry_key>",
+        "fields": {
+          "title": "<title_key>",
+          "link": "<link_key>",
+          "published": "<published_date_key>"
+        }
+      }
+    }
+  }
+}
+```
+
+## Deployment
+
+### GitHub Pages
+
+Enable GitHub Actions for the repository.
+
+Set `basePath` field to repository name in `nyan.config.json`.
+
+```json
+{
+  "basePath": "/<repository_name>"
+}
+```
+
+Commit and push changes to GitHub.
+
+```bash
+git add .
+git commit -m "Update next.config.js"
+git push
+```
+
+### Docker Compose
+
+Copy `.env.example` to `.env`.
+
+```env
+APP_PORT=3000
+```
+
+Set `basePath` field to empty string in `nyan.config.json`.
+
+```json
+{
+  "basePath": ""
+}
+```
+
+Build and run app.
+
+```bash
+docker compose up -d
+```
+
+## Contributors
+
+<a href="https://github.com/memochou1993/nyan-profile/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=memochou1993/nyan-profile" width="50" />
+</a>
+
+## License
+
+[MIT](LICENSE)

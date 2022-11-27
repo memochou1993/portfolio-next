@@ -1,45 +1,62 @@
 import React, {
   useState,
 } from 'react';
-import ProjectItem from './ProjectItem';
+import Divider from './Divider';
+import Heading from './Heading';
 import LoadMoreButton from './LoadMoreButton';
-import projects from '../assets/projects.json';
+import ProjectItem from './ProjectItem';
 
-const LIMIT = 6;
+interface ProjectListProps {
+  enabled: boolean;
+  title: string;
+  limit: number;
+  items: Array<{
+    name: string;
+    link: string;
+    image: string;
+    tags: Array<string>;
+    button: {
+      text: string;
+    };
+  }>;
+}
 
-export default function ProjectList() {
+export default function ProjectList({
+  enabled,
+  title,
+  limit,
+  items,
+}: ProjectListProps) {
   const [page, setPage] = useState(1);
-  return (
+  return enabled ? (
     <>
+      <Divider anchor={title} />
+      <Heading text={title} />
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 lg:gap-12">
-        {
-          projects.map(({
-            title,
-            image,
-            link,
-            tags,
-          }, i) => (
-            i < LIMIT * page && (
-              <div key={title} className="flex justify-center">
-                <ProjectItem
-                  key={title}
-                  title={title}
-                  image={image}
-                  link={link}
-                  tags={tags}
-                />
-              </div>
-            )
-          ))
-        }
+        {items.map(({
+          name,
+          link,
+          image,
+          tags,
+          button,
+        }, i) => (
+          i < limit * page && (
+            <ProjectItem
+              key={name}
+              name={name}
+              link={link}
+              image={image}
+              tags={tags}
+              button={button}
+            />
+          )
+        ))}
       </div>
-      {
-        page < projects.length / LIMIT && (
-          <div className="flex justify-center mt-12">
-            <LoadMoreButton onClick={() => setPage(page + 1)} />
-          </div>
-        )
-      }
+      {page < items.length / limit && (
+        <div className="flex justify-center mt-12">
+          <LoadMoreButton onClick={() => setPage(page + 1)} />
+        </div>
+      )}
     </>
-  );
+  ) : <template />;
 }
