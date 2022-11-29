@@ -15,16 +15,16 @@ export default function About({
     <>
       <Divider anchor={title} />
       <Heading text={title} />
-      <div className="dark:text-slate-300">
-        <p className="my-4 text-2xl font-medium">Hi there 🙋</p>
+      <div className="text-center dark:text-slate-300">
+        <p className="my-4">Hi there 🙋</p>
         <p className="my-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          I&apos;m Memo Chou, a creative developer passionate about Go, PHP, Rust and JavaScript.
         </p>
         <p className="my-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Any questions, or want to get involved, please get in touch.
         </p>
         <p className="my-4">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Thanks for visiting!
         </p>
       </div>
     </>
