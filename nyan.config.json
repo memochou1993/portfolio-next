@@ -77,6 +77,20 @@
       "limit": 6,
       "items": [
         {
+          "name": "AI Assistant",
+          "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/39.jpg",
+          "link": "https://portfolio.epoch.tw/works/39",
+          "tags": [
+            "2022",
+            "JavaScript",
+            "AI",
+            "Bot"
+          ],
+          "button": {
+            "text": "Read more"
+          }
+        },
+        {
           "name": "Memo's Profile",
           "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/38.jpg",
           "link": "https://portfolio.epoch.tw/works/38",
