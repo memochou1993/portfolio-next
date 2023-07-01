@@ -74,8 +74,36 @@
     "projectList": {
       "enabled": true,
       "title": "Projects",
-      "limit": 6,
+      "limit": 240,
       "items": [
+        {
+          "name": "WiseBot Console",
+          "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/41.jpg",
+          "link": "https://portfolio.epoch.tw/works/41",
+          "tags": [
+            "2023",
+            "Laravel",
+            "Vue",
+            "AI",
+            "Bot"
+          ],
+          "button": {
+            "text": "Read more"
+          }
+        },
+        {
+          "name": "AI Content Generator",
+          "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/40.jpg",
+          "link": "https://portfolio.epoch.tw/works/40",
+          "tags": [
+            "2023",
+            "Vue",
+            "AI"
+          ],
+          "button": {
+            "text": "Read more"
+          }
+        },
         {
           "name": "AI Assistant",
           "image": "https://portfolio.epoch.tw/images/screenshots/thumbnail/39.jpg",
@@ -96,7 +124,7 @@
           "link": "https://portfolio.epoch.tw/works/38",
           "tags": [
             "2022",
-            "JavaScript",
+            "React",
             "Next"
           ],
           "button": {
@@ -480,7 +508,7 @@
     "articleList": {
       "enabled": true,
       "title": "Articles",
-      "limit": 10,
+      "limit": 20,
       "source": "https://blog.epoch.tw/atom.xml",
       "entrySpec": {
         "key": "entry",
